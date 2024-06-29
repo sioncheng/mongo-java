@@ -10,11 +10,11 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public class MovieMongoRepository implements MovieRepository {
+public class MovieRepositoryImpl implements MovieRepository {
 
     private final MongoTemplate mongoTemplate;
 
-    public MovieMongoRepository(@Autowired MongoTemplate mongoTemplate) {
+    public MovieRepositoryImpl(@Autowired MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
     }
 
